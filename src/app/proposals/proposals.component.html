@@ -1,0 +1,8 @@
+<app-profile-row [canFollow]="false"></app-profile-row>
+
+<div class="fv">
+    <b>Katzen die zu dir passen</b>
+</div>
+
+<app-profile-row *ngFor="let i of [0, 1]" [name]="names[i]" [texts]="texts[i]" [img]="images[i]"></app-profile-row>
+

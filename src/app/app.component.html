@@ -1,0 +1,13 @@
+<app-header></app-header>
+
+<div class="flexrow">
+  <div class="container">
+    <app-friendbox></app-friendbox>
+
+    <app-cat-card 
+      *ngFor="let i of [0, 1, 2, 3]" [catpics]="postImages[i]" [text]="postTexts[i]"></app-cat-card>
+  </div>
+
+  <app-proposals></app-proposals>
+</div>
+
