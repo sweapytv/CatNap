@@ -1,28 +1,42 @@
 .card {
-    min-height: 800px;
+    min-height: 450px;
     overflow: hidden;
     position: relative;
+    padding-bottom: 80px;
     border-color: rgba(255,255,255,0.3);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
     img {
         width: 100%;
+        height: auto;
+        display: block;
     }
 
     p {
-        padding-left: 16px;
-        padding-right: 16px;
+        padding: 16px;
         color: white;
-        font-size: 20px;
+        font-size: 18px;
+        line-height: 1.4;
     }
     button {
         width: 50%;
         position: absolute;
         bottom: 0;
-        height: 100px;
+        height: 60px;
         background-color: rgba(155,155,155,0.2);
-        border: unset;
+        border: none;
         border-top: 1px solid rgba(255,255,255,0.5);
         cursor: pointer;
         color: white;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
         &:first-child {
             left: 0;
@@ -30,7 +44,7 @@
         }
 
         &:hover {
-            background-color: rgba(255,255,255,0.05);
+            background-color: rgba(255,255,255,0.1);
         }
 
         &:last-child {
@@ -39,12 +53,9 @@
         }
 
         mat-icon {
-            padding-top: 4px;
-            font-size: 18px;
+            margin-right: 4px;
+            font-size: 20px;
         }
-        display: flex;
-        align-items: center;
-        justify-content: center;
     }
 }
 
